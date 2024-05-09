@@ -1,0 +1,9 @@
+spec:
+  name: bitcoin-dance 
+  static_sites:
+    - name: web
+      git:
+        branch: main
+        repo_clone_url: https://github.com/masonforest/bitcoin.dance.git
+      dockerfile_path: Dockerfile.static
+      output_dir: /app/public

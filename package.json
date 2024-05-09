@@ -1,11 +1,11 @@
 {
-  "name": "bitcoin-wallet-test",
+  "name": "bitcoin.dance",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && mv public/unlock_tutorial.mp4 dist/unlock_tutorial.mp4",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -22,10 +22,12 @@
     "bitcoinjs-lib": "^6.1.5",
     "bitcoinjs-message": "^2.2.0",
     "buffer": "^6.0.3",
+    "ethers": "^6.12.0",
     "hdkey": "^2.1.0",
     "lodash": "^4.17.21",
     "sha256-uint8array": "^0.10.7",
     "uint8array-tools": "^0.0.7",
-    "vite-plugin-node-polyfills": "^0.21.0"
+    "vite-plugin-node-polyfills": "^0.21.0",
+    "yaml": "^2.4.1"
   }
 }
